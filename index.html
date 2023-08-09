@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Isaac Portfolio</title>
+    <style>
+      .button {
+        background-color: black;
+        padding: 1rem;
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        font-family: "Courier New", Courier, monospace;
+        border: 1px solid white;
+        cursor: pointer;
+        filter: blur(0.5px);
+        transition: filter 0.3s linear;
+      }
+      .button:hover {
+        filter: blur(0px);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- (header > h1+ ( nav > ul > li*3 > a > {Link} ) ) + (main) + (footer) -->
+    <header id="top">
+      <h1>Isaac O</h1>
+      <nav aria-label="primary">
+        <ul>
+          <li><a href="#homeSection">Home</a></li>
+          <li><a href="#aboutSection">About</a></li>
+          <li><a href="#contactSection">Contact</a></li>
+          <li><a href="#top">Top</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- main>secion#section*3>(h2>{Title})+(article>(h3)(p>lorem))+footer>button.cta -->
+    <main>
+      <secion id="homeSection">
+        <h2>I'm a Developer</h2>
+        <article>
+          <h3>I make websites</h3>
+          <p>
+            Welcome to my corner of the digital realm! I'm Isaac, a seasoned web
+            developer with over five years of dedicated experience in crafting
+            captivating online experiences. Throughout my journey, I've been
+            immersed in the ever-evolving world of web development, honing my
+            skills and staying at the forefront of cutting-edge technologies.
+            <br />From designing sleek user interfaces to translating intricate
+            backend functionalities, I've had the privilege of bringing numerous
+            visions to life. Join me as I showcase a collection of my ventures,
+            each pixel and line of code a testament to my passion for weaving
+            innovation and aesthetics into the intricate tapestry of the
+            internet.
+          </p>
+          <footer>
+            <button class="button cta">Learn More</button>
+            <a href="#contactSection" class="button cta secondary"
+              >Contact Me</a
+            >
+          </footer>
+        </article>
+      </secion>
+
+      <secion id="aboutSection">
+        <h2>Title</h2>
+        <article>
+          <h3></h3>
+          <p>
+            Recusandae earum blanditiis voluptates, tempore nulla impedit
+            excepturi molestias quaerat nisi ratione explicabo quia adipisci
+            sapiente suscipit sunt, quos ea! Ipsam inventore aliquam vitae id
+            consectetur expedita labore vel sapiente?
+          </p>
+        </article>
+        <footer><button class="cta"></button></footer>
+      </secion>
+
+      <secion id="contactSection">
+        <h2>About</h2>
+        <article>
+          <h3>Article Title</h3>
+          <p>
+            Neque repellat delectus sit perferendis consequatur perspiciatis
+            quisquam dicta, accusamus, quaerat autem eos rerum fugit! Iusto
+            neque perspiciatis modi, eius quidem hic doloremque ipsa, voluptas
+            dicta autem earum culpa alias.
+          </p>
+        </article>
+        <footer><button class="button cta">Learn More</button></footer>
+      </secion>
+    </main>
+
+    <footer>
+      <nav aria-label="secondary">
+        <ul>
+          <li><a href="#homeSection">Home</a></li>
+          <li><a href="#aboutSection">About</a></li>
+          <li><a href="#contactSection">Contact</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
